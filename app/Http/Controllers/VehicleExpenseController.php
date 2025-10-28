@@ -84,7 +84,7 @@ class VehicleExpenseController extends Controller
 
         $query->orderBy($sort, $direction);
 
-        $expenses = $query->paginate($perPage)->appends($request->query());
+        $expenses = $query->simplePaginate($perPage)->appends($request->query());
 
         return VehicleExpenseResource::collection($expenses);
     }
