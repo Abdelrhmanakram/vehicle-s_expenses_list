@@ -24,5 +24,3 @@ GET `/api/vehicle-expenses`
 ## Rate limiting
 Endpoint limited to 5 requests per minute via `throttle` middleware.
 
-## Tests
-Run: `php artisan test`
